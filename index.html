@@ -1,25 +1,78 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>One hundred percent human films</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background: #050505;
+  color: white;
+}
 
-<nav>
-  <div class="logo">100% HUMAN</div>
-  <div class="links">
-    <a href="work.html">Work</a>
-    <a href="blog.html">Blog</a>
-    <a href="upcoming.html">Upcoming</a>
-    <a href="about.html">About</a>
-  </div>
-</nav>
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 60px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: rgba(5,5,5,0.85);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
 
-<section class="hero">
-  <h1>One hundred percent human films</h1>
-  <p>Stories that feel real.</p>
-</section>
+.logo {
+  font-size: 14px;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
 
-</body>
-</html>
+.links a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  letter-spacing: 1px;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.links a:hover {
+  opacity: 1;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10%;
+}
+
+.hero h1 {
+  font-size: 64px;
+  font-weight: 500;
+  letter-spacing: 4px;
+  margin: 0;
+}
+
+.hero p {
+  margin-top: 20px;
+  font-size: 16px;
+  opacity: 0.5;
+}
+
+/* subtle fade-in */
+.hero {
+  animation: fadeIn 1.5s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
