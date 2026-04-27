@@ -2,7 +2,7 @@ body {
   margin: 0;
   font-family: Helvetica, Arial, sans-serif;
   background: #050505;
-  color: white;
+  color: #ffffff;
 }
 
 /* NAVBAR */
@@ -12,44 +12,82 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 25px 60px;
-  background: rgba(5,5,5,0.85);
-  backdrop-filter: blur(10px);
+  padding: 22px 60px;
+  background: rgba(5,5,5,0.7);
+  backdrop-filter: blur(14px);
+  z-index: 999;
 }
 
 .logo {
-  font-size: 14px;
-  letter-spacing: 3px;
+  font-size: 13px;
+  letter-spacing: 4px;
+  opacity: 0.9;
 }
 
 .links a {
-  margin-left: 25px;
-  color: white;
-  text-decoration: none;
-  opacity: 0.6;
+  margin-left: 28px;
   font-size: 13px;
+  text-decoration: none;
+  color: white;
+  opacity: 0.5;
+  transition: 0.25s ease;
 }
 
 .links a:hover {
   opacity: 1;
 }
 
-/* HERO */
+/* HERO / PAGE TITLE */
 .hero {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-left: 10%;
+  padding-right: 10%;
 }
 
 .hero h1 {
-  font-size: 60px;
-  letter-spacing: 4px;
+  font-size: 70px;
+  letter-spacing: 5px;
   margin: 0;
+  font-weight: 500;
 }
 
 .hero p {
-  opacity: 0.5;
-  margin-top: 15px;
+  margin-top: 18px;
+  opacity: 0.55;
+  font-size: 15px;
+  max-width: 500px;
+}
+
+/* PAGE VARIANTS */
+.page {
+  padding: 140px 10% 80px 10%;
+}
+
+.page h1 {
+  font-size: 42px;
+  letter-spacing: 3px;
+}
+
+.page p {
+  opacity: 0.6;
+  line-height: 1.6;
+}
+
+/* subtle fade in */
+.hero, .page {
+  animation: fadeIn 1.2s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
