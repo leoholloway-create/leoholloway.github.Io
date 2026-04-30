@@ -12,11 +12,11 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 22px 60px;
+  padding: 22px 40px;
   background: rgba(5,5,5,0.7);
   backdrop-filter: blur(14px);
   z-index: 999;
-  flex-wrap: wrap; 
+  box-sizing: border-box;
 }
 
 .logo {
@@ -27,9 +27,8 @@ body {
 
 .links {
   display: flex;
-  gap: 28px;
-  align-items: center;
   flex-wrap: wrap;
+  gap: 18px;
   justify-content: flex-end;
 }
 
