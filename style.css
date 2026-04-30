@@ -16,6 +16,7 @@ body {
   background: rgba(5,5,5,0.7);
   backdrop-filter: blur(14px);
   z-index: 999;
+  flex-wrap: wrap; 
 }
 
 .logo {
@@ -24,8 +25,15 @@ body {
   opacity: 0.9;
 }
 
+.links {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
 .links a {
-  margin-left: 28px;
   font-size: 13px;
   text-decoration: none;
   color: white;
