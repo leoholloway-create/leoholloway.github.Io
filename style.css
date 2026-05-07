@@ -223,3 +223,30 @@ section {
 .film-info a:hover {
   border-color: white;
 }
+.blog-layout {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.featured-post {
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+  padding-bottom: 40px;
+}
+
+.featured-post h2 {
+  font-size: 42px;
+  max-width: 800px;
+  line-height: 1.1;
+}
+
+.blog-post {
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.blog-post h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
