@@ -223,6 +223,7 @@ section {
 .film-info a:hover {
   border-color: white;
 }
+
 .blog-layout {
   margin-top: 60px;
   display: flex;
@@ -288,4 +289,44 @@ section {
   letter-spacing: 2px;
   font-size: 12px;
   text-transform: uppercase;
+}
+.main-article {
+  margin-top: 80px;
+  border-top: 1px solid rgba(255,255,255,0.12);
+  padding-top: 40px;
+  max-width: 900px;
+}
+
+.article-tag {
+  font-size: 11px;
+  letter-spacing: 3px;
+  opacity: 0.5;
+}
+
+.main-article h2 {
+  font-size: 52px;
+  line-height: 1.05;
+  margin-top: 18px;
+  margin-bottom: 24px;
+  max-width: 850px;
+}
+
+.article-intro {
+  font-size: 18px;
+  line-height: 1.7;
+  opacity: 0.7;
+  max-width: 700px;
+  margin-bottom: 40px;
+}
+
+.main-article a {
+  text-decoration: none;
+  color: white;
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+  padding-bottom: 5px;
+  transition: 0.3s ease;
+}
+
+.main-article a:hover {
+  border-color: white;
 }
