@@ -260,3 +260,32 @@ section {
   margin-bottom: 14px;
   letter-spacing: 1px;
 }
+.featured-work {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.featured-video iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: none;
+}
+
+.featured-text {
+  max-width: 700px;
+}
+
+.featured-text h2 {
+  font-size: 30px;
+  margin-bottom: 16px;
+  letter-spacing: 1px;
+}
+
+.featured-text span {
+  opacity: 0.5;
+  letter-spacing: 2px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
